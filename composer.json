@@ -1,0 +1,19 @@
+{
+    "name": "asus/abiesoft-2.0",
+    "autoload": {
+        "psr-4": {
+            "AbieSoft\\": "app/",
+            "Application\\Controllers\\": "controllers/",
+            "Application\\Models\\": "models/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Sukron Abbayroad",
+            "email": "sabbayroad@gmail.com"
+        }
+    ],
+    "require": {
+        "latte/latte": "^2.11"
+    }
+}

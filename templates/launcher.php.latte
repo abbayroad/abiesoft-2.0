@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{\AbieSoft\Utilities\Config::envReader('BASEURL')}/assets/fa/css/all.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>{\AbieSoft\Utilities\Config::envReader('WEB_TITLE')}{block title}{/block}</title>
+    <script>const baseurl = {\AbieSoft\Utilities\Config::envReader('BASEURL')}</script>
+</head>
+
+<body onload="jam()">
+    {include navbar from 'components/navbar.php.latte'}
+    {include menu from 'components/menu.php.latte'}
+    {include notifikasi from 'components/notifikasi.php.latte'}
+    <div class="absolute top-[60px] left-[200px] right-0 bottom-0 bg-slate-100 overflow-y-auto">{block content}{/block}</div>
+    <div>{block footer}&copy; {\AbieSoft\Utilities\Config::envReader('WEB_TITLE') .' | '. date('Y')}{/block}</div>
+    <script src="{\AbieSoft\Utilities\Config::envReader('BASEURL').'/assets/js/jquery-3.6.0.min.js'}"></script>
+    <script src="{\AbieSoft\Utilities\Config::envReader('BASEURL').'/assets/js/masonry.pkgd.min.js'}"></script>
+    <script src="{\AbieSoft\Utilities\Config::envReader('BASEURL').'/assets/js/default.js'}"></script>
+</body>
+
+</html>

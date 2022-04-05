@@ -1,0 +1,112 @@
+{block menu}
+<div class="absolute top-[60px] w-[200px] bg-slate-200 bottom-[64px] left-0 overflow-hidden hover:overflow-y-auto">
+    <div class="mt-3 p-4 text-center flex justify-left items-center">
+        <div class="w-[50px] h-[50px] bg-slate-300 rounded-full overflow-hidden">
+            <img src="{\AbieSoft\Utilities\Config::envReader('BASEURL')}/assets/media/images/photo_default.jpg" class="w-[50px] h-[50px] object-cover">
+        </div>
+        <div>
+            <div class="w-[90px] text-xs ml-2 text-left">Login Sebagai,</div>
+            <div class="w-[90px] h-[20px] font-semibold text-sm overflow-hidden ml-2 text-left">Sukron</div>
+        </div>
+    </div>
+    <ul class="mt-4 pb-4">
+        <li>
+            <a href="{\AbieSoft\Utilities\Config::envReader('BASEURL')}" class="px-4 py-2 block font-semibold h-[40px] {(explode('/',$_SERVER['REQUEST_URI'])[1] == '') ? '' : 'hover:'}bg-slate-100 {(explode('/',$_SERVER['REQUEST_URI'])[1] == '') ? '' : 'hover:'}shadow-sm {(explode('/',$_SERVER['REQUEST_URI'])[1] == '') ? '' : 'hover:'}rounded-tl-full {(explode('/',$_SERVER['REQUEST_URI'])[1] == '') ? '' : 'hover:'}rounded-bl-full {(explode('/',$_SERVER['REQUEST_URI'])[1] == '') ? '' : 'hover:'}ml-4">
+                <div class="flex items-center">
+                    <div class="w-[40px]"><i class="fa-solid fa-dashboard px-2 font-sm mr-2"></i></div>
+                    <span>Dashboard</span>
+                </div>
+            </a>
+        </li>
+        <li class="px-4 mt-4 mb-2 font-semibold text-sm text-slate-500">Menu Utama</li>
+        <li>
+            <a href="{\AbieSoft\Utilities\Config::envReader('BASEURL')}/users" class="px-4 py-2 block font-semibold h-[40px] {(explode('/',$_SERVER['REQUEST_URI'])[1] == 'users') ? '' : 'hover:'}bg-slate-100 {(explode('/',$_SERVER['REQUEST_URI'])[1] == 'users') ? '' : 'hover:'}shadow-sm {(explode('/',$_SERVER['REQUEST_URI'])[1] == 'users') ? '' : 'hover:'}rounded-tl-full {(explode('/',$_SERVER['REQUEST_URI'])[1] == 'users') ? '' : 'hover:'}rounded-bl-full {(explode('/',$_SERVER['REQUEST_URI'])[1] == 'users') ? '' : 'hover:'}ml-4">
+                <div class="flex items-center">
+                    <div class="w-[40px]"><i class="fa-solid fa-users px-2 font-sm mr-2"></i></div>
+                    <span>Users</span>
+                </div>
+            </a>
+        </li>
+        <li class="px-4 mt-4 mb-2 font-semibold text-sm text-slate-500">Menu Kamu</li>
+        <li>
+            <a href="{\AbieSoft\Utilities\Config::envReader('BASEURL')}/file?folder=3312022145" class="px-4 py-2 block font-semibold h-[40px] {(explode('/',$_SERVER['REQUEST_URI'])[1] == 'file?folder=3312022145') ? '' : 'hover:'}bg-slate-100 {(explode('/',$_SERVER['REQUEST_URI'])[1] == 'file?folder=3312022145') ? '' : 'hover:'}shadow-sm {(explode('/',$_SERVER['REQUEST_URI'])[1] == 'file?folder=3312022145') ? '' : 'hover:'}rounded-tl-full {(explode('/',$_SERVER['REQUEST_URI'])[1] == 'file?folder=3312022145') ? '' : 'hover:'}rounded-bl-full {(explode('/',$_SERVER['REQUEST_URI'])[1] == 'file?folder=3312022145') ? '' : 'hover:'}ml-4">
+                <div class="flex items-center">
+                    <div class="w-[40px]"><i class="fa-solid fa-archive px-2 font-sm mr-2"></i></div>
+                    <span>File Manajer</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="" class="px-4 py-2 block font-semibold h-[40px] hover:bg-slate-100 hover:shadow-sm hover:rounded-tl-full hover:rounded-bl-full hover:ml-4">
+                <div class="flex items-center">
+                    <div class="w-[40px]"><i class="fa-solid fa-message px-2 font-sm mr-2"></i></div>
+                    <span>Pesan</span>
+                </div>
+            </a>
+        </li>
+        <li class="px-4 mt-4 mb-2 font-semibold text-sm text-slate-500">Seting</li>
+        <li>
+            <a class="px-4 py-2 block font-semibold h-[40px]">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center">
+                        <div class="w-[40px]"><i class="fa-solid fa-gear px-2 font-sm mr-2"></i></div>
+                        <span>Aplikasi</span>
+                    </div>
+                </div>
+            </a>
+            <ul class="ml-4">
+                <li>
+                    <a href="" class="px-4 py-2 block font-semibold h-[40px] hover:bg-slate-100 hover:shadow-sm hover:rounded-tl-full hover:rounded-bl-full">
+                        <div class="flex items-center">
+                            <div class="w-[40px]"><i class="fa-solid fa-ellipsis px-2 font-sm mr-2"></i></div>
+                            <span>Notifikasi</span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a class="px-4 py-2 block font-semibold h-[40px]">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center">
+                        <div class="w-[40px]"><i class="fa-solid fa-user-gear px-2 font-sm mr-2"></i></div>
+                        <span>Akun</span>
+                    </div>
+                </div>
+            </a>
+            <ul class="ml-4">
+                <li>
+                    <a href="" class="px-4 py-2 block font-semibold h-[40px] hover:bg-slate-100 hover:shadow-sm hover:rounded-tl-full hover:rounded-bl-full">
+                        <div class="flex items-center">
+                            <div class="w-[40px]"><i class="fa-solid fa-ellipsis px-2 font-sm mr-2"></i></div>
+                            <span>Umum</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="px-4 py-2 block font-semibold h-[40px] hover:bg-slate-100 hover:shadow-sm hover:rounded-tl-full hover:rounded-bl-full">
+                        <div class="flex items-center">
+                            <div class="w-[40px]"><i class="fa-solid fa-ellipsis px-2 font-sm mr-2"></i></div>
+                            <span>Keamanan</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="px-4 py-2 block font-semibold h-[40px] hover:bg-slate-100 hover:shadow-sm hover:rounded-tl-full hover:rounded-bl-full">
+                        <div class="flex items-center">
+                            <div class="w-[40px]"><i class="fa-solid fa-ellipsis px-2 font-sm mr-2"></i></div>
+                            <span>Photo</span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</div>
+<div class="text-center absolute w-[200px] left-0 bottom-0 h-[64px] bg-sky-800 text-slate-100 flex items-center justify-center">
+    <div class="font-semibold">
+        <div class="text-sm">{\AbieSoft\Magic\Reader::hariini('tglfull')}</div>
+        <div class="text-lg mt-[-8px]"><span id="waktu">00:00:00</span> <span>WIB</span></div>
+    </div>
+</div>
+{/block}
